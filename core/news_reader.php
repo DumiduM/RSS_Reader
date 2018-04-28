@@ -1,4 +1,6 @@
 <?php
+
+//fethecs articles from te rss feed
 function fetch_news(){
 	$data = file_get_contents('http://feeds.bbci.co.uk/news/rss.xml');
 	$data = simplexml_load_string($data);
